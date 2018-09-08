@@ -1,0 +1,49 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "meattweaks:craftblock",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+	"normal": [{}],
+	"inventory": [{	}],
+    "variant": {
+      "oak": {
+        "textures": {
+          "particle": "minecraft:blocks/planks_oak",
+          "texture": "minecraft:blocks/planks_oak"
+        }
+      },
+      "spruce": {
+        "textures": {
+          "particle": "minecraft:blocks/planks_spruce",
+          "texture": "minecraft:blocks/planks_spruce"
+        }
+      },
+      "birch": {
+        "textures": {
+          "particle": "minecraft:blocks/planks_birch",
+          "texture": "minecraft:blocks/planks_birch"
+        }
+      },
+      "jungle": {
+        "textures": {
+          "particle": "minecraft:blocks/planks_jungle",
+          "texture": "minecraft:blocks/planks_jungle"
+        }
+      },
+      "acacia": {
+        "textures": {
+          "particle": "minecraft:blocks/planks_acacia",
+          "texture": "minecraft:blocks/planks_acacia"
+        }
+      },
+      "dark": {
+        "textures": {
+          "particle": "minecraft:blocks/planks_big_oak",
+          "texture": "minecraft:blocks/planks_big_oak"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+---- Minecraft Crash Report ----
+// Sorry :(
+
+Time: 2/10/18 1:29 AM
+Description: Initializing game
+
+java.lang.NoClassDefFoundError: se/gory_moon/horsepower/client/model/BakedChopperModel
+	at se.gory_moon.horsepower.client.ModModelManager.replaceChoppingModel(ModModelManager.java:224)
+	at se.gory_moon.horsepower.client.ModModelManager.onModelBake(ModModelManager.java:44)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_16_ModModelManager_onModelBake_ModelBakeEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:179)
+	at net.minecraftforge.client.ForgeHooksClient.onModelBake(ForgeHooksClient.java:386)
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:30)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:559)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+Caused by: java.lang.ClassNotFoundException: se.gory_moon.horsepower.client.model.BakedChopperModel
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 23 more
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: se.gory_moon.horsepower.client.model.TRSRBakedModel
+	at org.objectweb.asm.ClassWriter.getCommonSuperClass(ClassWriter.java:1728)
+	at org.objectweb.asm.ClassWriter.getMergedType(ClassWriter.java:1698)
+	at org.objectweb.asm.Frame.merge(Frame.java:1530)
+	at org.objectweb.asm.Frame.merge(Frame.java:1429)
+	at org.objectweb.asm.MethodWriter.visitMaxs(MethodWriter.java:1516)
+	at org.objectweb.asm.commons.LocalVariablesSorter.visitMaxs(LocalVariablesSorter.java:165)
+	at org.objectweb.asm.ClassReader.readCode(ClassReader.java:1634)
+	at org.objectweb.asm.ClassReader.readMethod(ClassReader.java:1032)
+	at org.objectweb.asm.ClassReader.accept(ClassReader.java:708)
+	at org.objectweb.asm.ClassReader.accept(ClassReader.java:521)
+	at net.minecraftforge.fml.common.asm.transformers.DeobfuscationTransformer.transform(DeobfuscationTransformer.java:51)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 25 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at se.gory_moon.horsepower.client.ModModelManager.replaceChoppingModel(ModModelManager.java:224)
+	at se.gory_moon.horsepower.client.ModModelManager.onModelBake(ModModelManager.java:44)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_16_ModModelManager_onModelBake_ModelBakeEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:179)
+	at net.minecraftforge.client.ForgeHooksClient.onModelBake(ForgeHooksClient.java:386)
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:30)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:559)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 493713048 bytes (470 MB) / 1159200768 bytes (1105 MB) up to 3808428032 bytes (3632 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.2.2613 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID         | Version      | Source                           | Signature                                |
+	|:----- |:---------- |:------------ |:-------------------------------- |:---------------------------------------- |
+	| UCH   | minecraft  | 1.12.2       | minecraft.jar                    | None                                     |
+	| UCH   | mcp        | 9.42         | minecraft.jar                    | None                                     |
+	| UCH   | FML        | 8.0.99.99    | forgeSrc-1.12.2-14.23.2.2613.jar | None                                     |
+	| UCH   | forge      | 14.23.2.2613 | forgeSrc-1.12.2-14.23.2.2613.jar | None                                     |
+	| UCH   | meattweaks | 0.0.1        | bin                              | None                                     |
+	| UCH   | horsepower | 2.5.11       | HorsePower-1.12.2-2.5.11.57.jar  | cd7e958342770a8b17c919055da42c24dfefd879 |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 390.77' Renderer: 'GeForce GTX 1080/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1080/PCIe/SSE2 GL version 4.6.0 NVIDIA 390.77, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz

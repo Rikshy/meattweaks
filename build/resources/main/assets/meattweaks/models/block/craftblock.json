@@ -1,0 +1,24 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "block/block",
+    "textures": {
+        "texture": "minecraft:blocks/planks_oak",
+        "top": "minecraft:blocks/crafting_table_top",
+        "bottom": "minecraft:blocks/log_oak_top"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#texture", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#texture", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#texture", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#texture", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#top", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#bottom", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

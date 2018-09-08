@@ -1,0 +1,25 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "EEE",
+        "XCX",
+        "EEE"
+    ],
+    "key": {
+        "E": {
+	      "type": "forge:ore_dict",
+	      "ore": "stone"
+        },
+        "C": {
+	      "type": "forge:ore_dict",
+	      "ore": "chest"
+        },
+        "X": {
+            "item": "minecraft:obsidian"
+        }
+    },
+    "result": {
+        "item": "meattweaks:trashblock",
+        "data": 7
+    }
+}

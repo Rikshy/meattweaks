@@ -1,0 +1,21 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "M M",
+        " S ",
+        "M M"
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:planks",
+            "data": 5
+        },
+        "S": {
+            "item": "minecraft:crafting_table"
+        }
+    },
+    "result": {
+        "item": "meattweaks:craftblock",
+        "data": 5
+    }
+}
