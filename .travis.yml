@@ -10,9 +10,11 @@ install: ./gradlew setupCIWorkspace -S
 script: ./gradlew build -S
 deploy:
   provider: releases
-  api_key: $ght
+  api_key: 
+    secure: $pass
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
+  name: Name?
   on:
-    tags: true
+    branch: master
