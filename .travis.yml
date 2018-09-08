@@ -15,6 +15,3 @@ deploy:
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
-  name: Name?
-  on:
-    branch: master
