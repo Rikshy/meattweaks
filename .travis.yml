@@ -10,8 +10,7 @@ install: ./gradlew setupCIWorkspace -S
 script: ./gradlew build -S
 deploy:
   provider: releases
-  api_key: 
-    secure: QOKd7KdiAuapY5SH4xJPgPu/OVN/y3U0JgFI5moGRLJcB8XLeBbSnZmV4Oq0Bp3+2veuKyD6PGNANMcnKmxnh6bQuWr7eZfhQSGPO3DhYdxsvA+7tgx5kqicGe7vv1EdZ18zixZzlPY05u3qSFS/hSYF1BHc38ahGlhXopxWRlOCy8X0Q5fYPDOJc+lnnWQELBLFsB3W/iVDryqtabpXTQaZoUXOFkATQwKOsplK4Op9T3v2d3pydOluluHYgxENAXsi2ESNoAPIKqSLk6ircz/zDCIdagFerxkqY2n0QgU6Pn5cEE0urRyF1/PzvugRgfhgl3/fofIE+43wOANlQWeePA+7IlG6WTLt63fhXjRuSz9fyvKnjMP2bz1Qt1JT0W5LldHewOD/jS7eq610m5MpjbmymukprPk6Ix4G6PzezCqEjB+xcaPeBqbRLFEFKQPKOU/DyVKKEJOzdpsrBdZ7uKWHh6ZO1G5nZ6mzJriMw4rjj/tdXDW9AMBvwp6GACsMzGkcdtqX1Gjd1jk8U1vQTIGRbxyZvDd+h7TV+3c4LEd/fLon7CWoZo6Z78yNhwi4WvjUd4GxLht78fpVMM1rq7I+XKjd9rbSBk8uAO2flfBBxoEW/scmKEc+FbcJ2j7qtnvExZH5i+WB5YS1p4s8TP6XEnrFfURIwVoqRTg=
+  api_key: $key
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
