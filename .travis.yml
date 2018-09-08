@@ -17,4 +17,4 @@ deploy:
   name: Build $TRAVIS_BUILD_NUMBER
   on:
     branch: master
-    tag: release
+    tag: false
